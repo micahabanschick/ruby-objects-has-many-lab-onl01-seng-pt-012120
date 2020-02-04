@@ -21,6 +21,17 @@ class Author
     @@post_count +=1
   end
   
+  def posts 
+    arr = [] #@songs
+    Post.all.each do |post|
+      if post.author_name == @name
+        arr << post 
+      end 
+    end
+    arr
+    #binding.pry
+  end 
+  
   def self.post_count 
     Post.all.length #@@post_count
   end 
