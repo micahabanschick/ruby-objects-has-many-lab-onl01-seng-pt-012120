@@ -31,6 +31,7 @@ class Artist
         arr << song 
       end 
     end
+    arr
     #binding.pry
   end 
   
