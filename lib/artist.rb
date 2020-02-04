@@ -25,7 +25,7 @@ class Artist
   end
 
   def songs 
-    @songs 
+    arr = [] #@songs 
     #binding.pry
   end 
   
