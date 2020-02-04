@@ -26,7 +26,7 @@ class Artist
 
   def songs 
     arr = [] #@songs
-    Songs.all.each do |song|
+    Song.all.each do |song|
       if song.artist_name == @name
         arr << song 
       end 
