@@ -25,7 +25,10 @@ class Artist
   end
 
   def songs 
-    arr = [] #@songs 
+    arr = [] #@songs
+    Songs.all.each do |song|
+      
+    end
     #binding.pry
   end 
   
