@@ -27,7 +27,9 @@ class Artist
   def songs 
     arr = [] #@songs
     Songs.all.each do |song|
-      
+      if song.artist.name == self.name
+        arr << song 
+      end 
     end
     #binding.pry
   end 
